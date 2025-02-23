@@ -1,0 +1,7 @@
+payment gateway
+admin panel which would show all the booking and should approve the booking
+only available slot should be displayed to customers
+users panel which would show their personal booking plus cancel option
+use AI ML
+role-based access control (RBAC)
+
