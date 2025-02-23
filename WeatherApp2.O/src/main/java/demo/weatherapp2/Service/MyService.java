@@ -16,7 +16,7 @@ public class MyService {
     WeatherResponse weatherResponse;
 
      public WeatherResponse fetchCity(double latitude, double Longitude){
-        String Api_key = "d5de115436e04b7796331dbf9b8f3843"; 
+        String Api_key = "***"; 
         String Api_URL = "https://api.opencagedata.com/geocode/v1/json?q="+latitude+"+"+Longitude+ "&key="+Api_key;
         String response = restTemplate.getForObject(Api_URL, String.class);
         JSONObject jsonResponse = new JSONObject(response);     // Convert it into JSON Object
@@ -40,7 +40,7 @@ public class MyService {
 
 
         // call the api to get weather 
-        String weather_api_key = "4fe9ae91a6ec8a34fe3e1b95794d2713";
+        String weather_api_key = "***";
         String weather_api_url = "http://api.weatherstack.com/current?access_key="+weather_api_key+"&query="+city;
         String weatherData = restTemplate.getForObject(weather_api_url, String.class);
         JSONObject weatherDataObject = new JSONObject(weatherData);
